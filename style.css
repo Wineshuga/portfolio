@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  background-color: #3c3a39;
+  color: #fff;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > a,
+.hero-text > h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.header > a {
+  font-size: 18px;
+}
+
+.menu-img {
+  width: 1.1rem;
+}
+
+.nav-list {
+  display: none;
+}
+
+.hero-section {
+  background: #1c1a19 url(./assets/Group.png) 100% 93% no-repeat;
+  background-size: 6.5rem;
+  padding: 7rem 1.5rem 8rem 1.5rem;
+}
+
+.hero-text {
+  width: fit-content;
+  max-width: 30rem;
+}
+
+.hero-text > h1 {
+  color: #ff6b00;
+  font-size: 56px;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
+}
+
+.header > a,
+.hero-text > h2,
+.hero-text > p {
+  color: #fff;
+}
+
+.hero-text > p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-top: 0.3rem;
+}
+
+.socials {
+  margin: 1rem;
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.socials > * {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+  }
+
+  .hero-text {
+    width: 40rem;
+  }
+
+  .hero-section {
+    padding-left: 1rem;
+  }
+
+  .socials {
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0.5rem;
+  }
+}
