@@ -9,19 +9,23 @@
   display: flex;
   background-color: #3c3a39;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
-.header > h3,
+.header > a,
 .hero-text > h2 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.header > a {
+  font-size: 18px;
 }
 
 .menu-img {
-  width: 2rem;
+  width: 1.1rem;
 }
 
 .nav-list {
@@ -29,9 +33,9 @@
 }
 
 .hero-section {
-  background: #1c1a19;
-  height: 90vh;
-  padding: 5rem 1.5rem;
+  background: #1c1a19 url(./assets/Group.png) 100% 93% no-repeat;
+  background-size: 6.5rem;
+  padding: 7rem 1.5rem 8rem 1.5rem;
 }
 
 .hero-text {
@@ -46,6 +50,7 @@
   font-family: 'Crete Round', serif;
 }
 
+.header > a,
 .hero-text > h2,
 .hero-text > p {
   color: #fff;
@@ -53,29 +58,19 @@
 
 .hero-text > p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0.3rem;
 }
 
 .socials {
   margin: 1rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
   align-items: center;
 }
 
 .socials > * {
-  margin: 0 0.2rem;
-}
-
-.small-bg-img {
-  position: absolute;
-  bottom: -2.5rem;
-  right: 0;
-}
-
-.big-bg-img {
-  display: none;
+  list-style: none;
 }
 
 @media (min-width: 768px) {
