@@ -98,24 +98,4 @@
     justify-content: center;
     padding-right: 0.5rem;
   }
-
-  @media (min-width: 820px) {
-    .big-bg-img {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 20rem;
-    }
-
-    .small-bg-img {
-      display: none;
-    }
-  }
-
-  @media (max-width: 1440px) {
-    .big-bg-img {
-      width: 25rem;
-    }
-  }
 }
