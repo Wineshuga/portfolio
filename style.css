@@ -6,7 +6,8 @@
   list-style: none;
 }
 
-h1 {
+h1,
+h3 {
   font-family: 'Crete Round', serif;
 }
 
@@ -115,7 +116,7 @@ ul {
     gap: 1.3rem;
   }
 
-  .multi-post > h1 {
+  .multi-post > h3 {
     text-align: center;
     font-weight: 400;
     font-size: 40px;
@@ -220,7 +221,23 @@ ul {
     color: #f4f5f7;
   }
 
-  .about-section > article > h1 {
+  .about-list h3 {
+    margin-bottom: 2rem;
+  }
+
+  .language > h3 {
+    background: url(./assets/icons/rect.svg) 2rem 50% no-repeat;
+  }
+
+  .framework > h3 {
+    background: url(./assets/icons/square.svg) 2rem 50% no-repeat;
+  }
+
+  .skills > h3 {
+    background: url(./assets/icons/circle.svg) 5rem 50% no-repeat;
+  }
+
+  .about-section > article > h3 {
     color: #ff6b00;
     font-size: 72px;
     font-weight: 400;
@@ -238,7 +255,7 @@ ul {
     margin: 0 1.5rem;
   }
 
-  .about-section > .about-details > h1 {
+  .about-section > .about-details > h3 {
     padding: 7.5rem 0 1.5rem 0;
   }
 
@@ -256,24 +273,8 @@ ul {
     flex-direction: column;
   }
 
-  .about-list h3 {
-    margin-bottom: 2rem;
-  }
-
   .about-list > div > ul > li {
     margin-bottom: 2rem;
-  }
-
-  .language > h3 {
-    background: url(./assets/icons/rect.svg) 2rem 50% no-repeat;
-  }
-
-  .framework > h3 {
-    background: url(./assets/icons/square.svg) 2rem 50% no-repeat;
-  }
-
-  .skills > h3 {
-    background: url(./assets/icons/circle.svg) 5rem 50% no-repeat;
   }
 }
 
