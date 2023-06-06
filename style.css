@@ -54,12 +54,6 @@ ul {
   margin: 1.5rem 0 13rem;
 }
 
-.form-button {
-  justify-content: center;
-  display: flex;
-  padding: 12px;
-}
-
 .header {
   display: flex;
   background-color: #3c3a39;
@@ -87,11 +81,17 @@ ul {
   display: none;
 }
 
-.footer p{
+.contact-section {
+  margin: 4.3rem auto;
+  width: 20.4rem;
+}
+
+.contact-section p{
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   text-align: center;
+  line-height: 1.5;
 }
 
 .form{
@@ -110,7 +110,7 @@ ul {
 
 .comment{
   margin: 0.9rem 0 0.9rem 0;
-  padding: 1.5rem;
+  padding: 1rem;
   width: 100%;
   border: none;
   background-color: #fbf8f7;
