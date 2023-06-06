@@ -116,6 +116,18 @@ ul {
   background-color: #fbf8f7;
 }
 
+.comment::placeholder {
+  font-style: italic;
+}
+
+.footer-hr {
+  margin: 0;
+}
+
+.footer-socials {
+  justify-content: center;
+  padding: 1.5rem 0 3.9rem;
+}
 
 @media (min-width: 375px) {
   .hero-section {
