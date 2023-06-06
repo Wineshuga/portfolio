@@ -86,7 +86,7 @@ ul {
   width: 20.4rem;
 }
 
-.contact-section p{
+.contact-section p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -94,21 +94,22 @@ ul {
   line-height: 1.5;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 7.4rem;
 }
 
-.name, .email{
+.name,
+.email {
   padding: 1rem;
   border: 0;
   width: 100%;
   border-bottom: 1px solid #dbd8d7;
 }
 
-.comment{
+.comment {
   margin: 0.9rem 0 0.9rem 0;
   padding: 1rem;
   width: 100%;
