@@ -22,6 +22,7 @@ ul {
 
 .btn {
   background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
   border: none;
   padding: 0.75rem;
   color: #fff;
@@ -92,13 +93,14 @@ ul {
   font-size: 32px;
   text-align: center;
   line-height: 1.5;
+  color: #172b4d;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7.4rem;
+  margin-top: 4.5rem;
 }
 
 .name,
@@ -127,7 +129,8 @@ ul {
 
 .footer-socials {
   justify-content: center;
-  padding: 1.5rem 0 3.9rem;
+  padding: 1.5rem 0 2.9rem 0;
+  gap: 1.3rem;
 }
 
 @media (min-width: 375px) {
