@@ -385,11 +385,32 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .main-container {
+    gap: 3rem;
+  }
+
+  .hero-section {
+    padding: 12rem 1rem 15.6rem;
+    background-size: 33rem;
+    background-position-y: -3rem;
+  }
+
+  .hero-text {
+    width: 35.3rem;
+  }
+
   .hero-text > h1 {
     font-size: 72px;
   }
 
+  .hero-text > h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
   .hero-text > p {
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
   }
