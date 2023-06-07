@@ -331,18 +331,34 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .menu-img {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
   .main-container {
     display: flex;
     flex-direction: row-reverse;
-    float: left;
+    justify-content: left;
+    gap: 1rem;
   }
 
   .hero-text {
-    width: 40rem;
+    width: 25rem;
+  }
+
+  .hero-text > h2 {
+    margin-bottom: 1rem;
   }
 
   .hero-section {
     padding-left: 1rem;
+    background-image: url(./assets/icons/Group2.png);
+    background-size: 20rem;
+    background-position: 100% 25%;
   }
 
   .socials {
@@ -365,5 +381,16 @@ ul {
 
   .about-section {
     background: #1c1a19 url(./assets//images/abt-bg-img.svg) 100% 20% no-repeat;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-text > h1 {
+    font-size: 72px;
+  }
+
+  .hero-text > p {
+    font-size: 20px;
+    line-height: 32px;
   }
 }
