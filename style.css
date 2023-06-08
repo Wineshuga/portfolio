@@ -8,7 +8,7 @@
 
 h1,
 h3 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
 }
 
 ul {
@@ -23,7 +23,7 @@ ul {
 .btn {
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 0.75rem;
   color: #fff;
   font-size: 17px;
@@ -48,7 +48,7 @@ ul {
 }
 
 .works-btn {
-  width:inherit;
+  width: inherit;
 }
 
 .about-btn {
@@ -65,7 +65,7 @@ ul {
 }
 
 .nav-list > li > a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   font-weight: 600;
   font-size: 15px;
@@ -79,7 +79,7 @@ ul {
 
 .header > a,
 .hero-text > h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -96,12 +96,14 @@ ul {
 }
 
 .contact-section {
+  display: flex;
+  flex-direction: column;
   margin: 4.3rem auto;
   width: 20.4rem;
 }
 
-.contact-section p {
-  font-family: 'Inter', sans-serif;
+.contact-section > div > p {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   text-align: center;
@@ -113,15 +115,22 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
+}
+
+.name,
+.first-name,
+.last-name,
+.email {
+  padding: 1rem;
+  margin-top: 0.9rem;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 .name,
 .email {
-  padding: 1rem;
-  border: 0;
   width: 100%;
-  border-bottom: 1px solid #dbd8d7;
 }
 
 .comment {
@@ -171,7 +180,7 @@ ul {
   }
 
   .hero-text > p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin-top: 0.3rem;
   }
@@ -200,7 +209,7 @@ ul {
   .about-section p,
   .about-section li,
   .about-list h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .mp-sec {
@@ -274,7 +283,7 @@ ul {
   .heading {
     font-size: 32px;
     margin-bottom: 0.75rem;
-    font-family: 'Crete round', serif;
+    font-family: "Crete round", serif;
   }
 
   .about-section {
@@ -343,6 +352,11 @@ ul {
 
   .about-list > div > ul > li {
     margin-bottom: 2rem;
+  }
+
+  .first-name,
+  .last-name {
+    display: none;
   }
 }
 
@@ -421,11 +435,13 @@ ul {
 
   .about-section {
     height: fit-content;
-    background: #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28% no-repeat;
+    background: #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28%
+      no-repeat;
     background-size: 28rem;
   }
 
-  .about-section > hr, .about-list {
+  .about-section > hr,
+  .about-list {
     max-width: 46rem;
     margin: auto;
   }
@@ -441,7 +457,7 @@ ul {
 
   .about-list {
     flex-direction: row;
-    align-items:start;
+    align-items: start;
     justify-content: space-between;
     margin-top: 9.1rem;
     flex-wrap: wrap;
@@ -454,6 +470,42 @@ ul {
 
   .about-list > div > ul > li {
     font-size: 22px;
+  }
+
+  .contact-section {
+    flex-direction: row;
+    align-items: start;
+    margin: 8.1rem auto 9.6rem;
+    gap: 1.5rem;
+    width: 43.75rem;
+    text-align: left;
+  }
+
+  .contact-section > div,
+  .form {
+    width: 50%;
+  }
+
+  .contact-section > div > p {
+    text-align: left;
+  }
+
+  .form {
+    margin-top: 0;
+  }
+
+  .first-name,
+  .last-name {
+    display: inline;
+    width: 50%;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .form-button {
+    margin-left: 0;
   }
 }
 
@@ -487,7 +539,7 @@ ul {
   }
 
   .hero-text > p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 32px;
   }
@@ -500,8 +552,28 @@ ul {
     margin-left: 7rem;
   }
 
-  .about-section > hr, .about-list {
+  .about-section > hr,
+  .about-list {
     max-width: 60.25rem;
+  }
+
+  .contact-section {
+    width: 56.3rem;
+  }
+
+  .contact-section > div {
+    width: 40%;
+  }
+
+  .form {
+    width: 60%;
+  }
+
+  fieldset {
+    display: flex;
+    width: 100%;
+    border: none;
+    gap: 1.5rem;
   }
 }
 
@@ -515,8 +587,8 @@ ul {
     background-size: auto;
   }
 
-
-  .about-section > hr, .about-list {
+  .about-section > hr,
+  .about-list {
     max-width: 72.25rem;
   }
 }
