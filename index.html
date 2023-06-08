@@ -68,6 +68,7 @@
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="#"><img src="./assets/icons/mail.svg" alt="mail box"></a></li>
         </ul>
       </nav>
     </header>
@@ -82,7 +83,7 @@
             </h1>
             <h2>I'm a Software Developer</h2>
             <p>
-              I can help you build a product , feature or website Look through
+              I can help you build a product , feature or website. Look through
               some of my work and experience! If you like what you see and have
               a project you need coded, don’t hesitate to contact me.
             </p>
@@ -118,8 +119,12 @@
       </section>
 
       <section class="multi-post">
-        <h3>My Recent Works</h3>
-        <hr />
+        <section class="mp-head">
+          <h3>My Recent Works</h3>
+          <div>
+            <hr />
+          </div>
+        </section>
         <section class="mp-sec">
           <div class="mp-sec-img">
             <img
@@ -287,15 +292,37 @@
         </article>
       </section>
       <section class="contact-section">
-        <p>
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </p>
+        <div>
+          <p>
+            I'm always interested in hearing about new projects, so if you'd like
+            to chat please get in touch.
+          </p>  
+        </div>
         <form
           action="https://formspree.io/f/mbjevaqz"
           method="post"
           class="form"
         >
+        <fieldset>
+          <input
+          class="first-name"
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="First name"
+          maxlength="30"
+          required
+        />
+        <input
+          class="last-name"
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Last name"
+          maxlength="30"
+          required
+        />
+      </fieldset>
           <input
             class="name"
             type="text"
@@ -304,7 +331,7 @@
             placeholder="Full name"
             maxlength="30"
             required
-          /><br />
+          />
           <input
             class="email"
             type="email"
@@ -312,7 +339,7 @@
             id="email"
             placeholder="Email Address"
             required
-          /><br />
+          />
           <textarea
             class="comment"
             name="comment"
@@ -323,7 +350,7 @@
             placeholder="Write something in me..."
             required
           ></textarea
-          ><br />
+          >
           <input
             class="btn form-button"
             type="submit"
