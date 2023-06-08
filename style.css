@@ -64,19 +64,6 @@ ul {
   align-items: center;
 }
 
-.nav-list > li > a {
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 15px;
-  margin: 0 1rem;
-  align-items: center;
-}
-
-.nav-list {
-  align-items: center;
-}
-
 .header > a,
 .hero-text > h2 {
   font-family: "Roboto", sans-serif;
@@ -87,12 +74,22 @@ ul {
   font-size: 18px;
 }
 
-.menu-img {
-  width: 1.1rem;
+.nav-list > li > a {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 1rem;
+  align-items: center;
 }
 
 .nav-list {
+  align-items: center;
   display: none;
+}
+
+.menu-img {
+  width: 1.1rem;
 }
 
 .contact-section {
@@ -190,7 +187,7 @@ ul {
     gap: 1.3rem;
   }
 
-  .multi-post > h3 {
+  .mp-head > h3 {
     text-align: center;
     font-weight: 400;
     font-size: 40px;
@@ -199,6 +196,10 @@ ul {
 
   hr {
     margin: 0 1.5rem 3.2rem 1.5rem;
+  }
+
+  .mp-head > div > hr {
+    border: 1px solid #212121;
   }
 
   .mp-sec p,
@@ -217,7 +218,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     max-width: 50rem;
-    margin: 0 1.15rem;
+    margin: 5rem 1.15rem 0;
   }
 
   .mp-sec-img {
@@ -361,6 +362,19 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .mp-head > h3 {
+    margin: 3rem 0 3.2rem 0;
+    width: calc(100% - 70%);
+    font-size: 28px;
+  }
+
+  .mp-head {
+    display: flex;
+    align-items: center;
+    margin: 8.4rem auto 2rem;
+    width: 98%;
+  }
+
   .header {
     padding: 1rem 6rem;
   }
@@ -401,6 +415,11 @@ ul {
     padding-right: 0.5rem;
   }
 
+  .mp-head > div {
+    padding-top: 3.5rem;
+    width: 70%;
+  }
+
   .mp-sec {
     align-items: center;
     flex-direction: row;
@@ -435,7 +454,8 @@ ul {
 
   .about-section {
     height: fit-content;
-    background: #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28%
+    background:
+      #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28%
       no-repeat;
     background-size: 28rem;
   }
@@ -507,6 +527,13 @@ ul {
   .form-button {
     margin-left: 0;
   }
+
+  fieldset {
+    display: flex;
+    width: 100%;
+    border: none;
+    gap: 1.5rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -544,6 +571,10 @@ ul {
     line-height: 32px;
   }
 
+  .mp-head > h3 {
+    font-size: 35px;
+  }
+
   .works-section {
     margin-bottom: 8.1rem;
   }
@@ -568,16 +599,13 @@ ul {
   .form {
     width: 60%;
   }
-
-  fieldset {
-    display: flex;
-    width: 100%;
-    border: none;
-    gap: 1.5rem;
-  }
 }
 
 @media (min-width: 1200px) {
+  .mp-head > h3 {
+    font-size: 40px;
+  }
+
   .works-section {
     grid-template-columns: repeat(3, 1fr);
   }
