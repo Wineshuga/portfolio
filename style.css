@@ -420,7 +420,40 @@ ul {
   }
 
   .about-section {
-    background: #1c1a19 url(./assets//images/abt-bg-img.svg) 100% 20% no-repeat;
+    height: fit-content;
+    background: #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28% no-repeat;
+    background-size: 28rem;
+  }
+
+  .about-section > hr, .about-list {
+    max-width: 46rem;
+    margin: auto;
+  }
+
+  .about-details {
+    max-width: 35rem;
+    margin-left: 5rem;
+  }
+
+  .about-details > p {
+    font-size: 20px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    align-items:start;
+    justify-content: space-between;
+    margin-top: 9.1rem;
+    flex-wrap: wrap;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .about-list > div > ul > li {
+    font-size: 22px;
   }
 }
 
@@ -462,10 +495,28 @@ ul {
   .works-section {
     margin-bottom: 8.1rem;
   }
+
+  .about-details {
+    margin-left: 7rem;
+  }
+
+  .about-section > hr, .about-list {
+    max-width: 60.25rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .works-section {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-section {
+    background-position: 100% 20%;
+    background-size: auto;
+  }
+
+
+  .about-section > hr, .about-list {
+    max-width: 72.25rem;
   }
 }
