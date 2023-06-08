@@ -22,8 +22,8 @@ ul {
 
 .btn {
   background-color: #ff6b00;
+  border: 1px solid #ff6b00;
   font-family: 'Inter', sans-serif;
-  border: none;
   padding: 0.75rem;
   color: #fff;
   font-size: 17px;
@@ -48,7 +48,7 @@ ul {
 }
 
 .works-btn {
-  width: 100%;
+  width:inherit;
 }
 
 .about-btn {
@@ -222,8 +222,11 @@ ul {
   .mp-article p,
   .heading {
     line-height: 1.5;
-    font-size: 16px;
     font-weight: 400;
+  }
+
+  .mp-article p {
+    font-size: 16px;
   }
 
   .mp-list,
@@ -243,7 +246,6 @@ ul {
 
   .works-item {
     background: url(./assets/images/wrk-bg-img.svg) no-repeat;
-    margin: 1.5rem;
     width: 20.4rem;
   }
 
@@ -264,14 +266,15 @@ ul {
   .works-section {
     display: grid;
     width: fit-content;
-    margin: auto;
-    padding-bottom: 7rem;
+    max-width: 72.2rem;
+    margin: 1.5rem auto 7.5rem;
+    gap: 1.5rem;
   }
 
   .heading {
     font-size: 32px;
     margin-bottom: 0.75rem;
-    font-weight: 400;
+    font-family: 'Crete round', serif;
   }
 
   .about-section {
@@ -386,14 +389,34 @@ ul {
 
   .mp-sec {
     align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 70.25rem;
+    margin: auto;
+    padding: 0 1.5rem;
   }
 
   .mp-sec-img {
-    width: 100%;
+    width: 59.2%;
+  }
+
+  .mp-article {
+    width: 28rem;
   }
 
   .works-section {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .works-item {
+    background: url(./assets/images/Img\ Placeholder.svg) no-repeat;
+    width: 23rem;
+  }
+
+  .works-item > article {
+    width: inherit;
+    padding-top: 11.1rem;
   }
 
   .about-section {
@@ -434,5 +457,15 @@ ul {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
+  }
+
+  .works-section {
+    margin-bottom: 8.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .works-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
