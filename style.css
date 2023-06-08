@@ -64,6 +64,19 @@ ul {
   align-items: center;
 }
 
+.nav-list > li > a {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.nav-list {
+  align-items: center;
+}
+
 .header > a,
 .hero-text > h2 {
   font-family: 'Roboto', sans-serif;
@@ -331,6 +344,10 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .header {
+    padding: 1rem 6rem;
+  }
+
   .menu-img {
     display: none;
   }
@@ -385,6 +402,10 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .header {
+    padding: 1rem 8rem;
+  }
+
   .main-container {
     gap: 3rem;
   }
