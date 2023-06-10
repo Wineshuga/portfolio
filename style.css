@@ -487,8 +487,7 @@ ul {
 
   .about-section {
     height: fit-content;
-    background:
-      #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28%
+    background: #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28%
       no-repeat;
     background-size: 28rem;
   }
