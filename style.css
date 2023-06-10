@@ -6,6 +6,37 @@
   list-style: none;
 }
 
+@keyframes beep {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: #ff6b00;
+  }
+}
+
+.animate {
+  color: #ff6b00;
+  animation-name: beep;
+  animation-iteration-count: infinite;
+}
+
+.dot1 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+}
+
+.dot3 {
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
 h1,
 h3 {
   font-family: "Crete Round", serif;
@@ -29,12 +60,14 @@ ul {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
+  transition: background-color 2s, color 2s, border 2s;
 }
 
 .btn:hover {
   color: #ff6b00;
   border: 1px solid #ff6b00;
   background-color: #fff5e1;
+  cursor: pointer;
 }
 
 .btn:focus {
@@ -454,9 +487,7 @@ ul {
 
   .about-section {
     height: fit-content;
-    background:
-      #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28%
-      no-repeat;
+    background: #1c1a19 url(./assets//images/abt-desk-img.svg) 100% 28% no-repeat;
     background-size: 28rem;
   }
 

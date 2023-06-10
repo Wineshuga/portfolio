@@ -68,7 +68,9 @@
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#"><img src="./assets/icons/mail.svg" alt="mail box"></a></li>
+          <li>
+            <a href="#"><img src="./assets/icons/mail.svg" alt="mail box" /></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -79,7 +81,9 @@
           <div class="hero-text">
             <h1>
               Hey There.<br />
-              I'm Winnie.
+              I'm Winnie<span class="animate dot1">.</span
+              ><span class="animate dot2">.</span
+              ><span class="animate dot3">.</span>
             </h1>
             <h2>I'm a Software Developer</h2>
             <p>
@@ -294,35 +298,35 @@
       <section class="contact-section">
         <div>
           <p>
-            I'm always interested in hearing about new projects, so if you'd like
-            to chat please get in touch.
-          </p>  
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
         </div>
         <form
           action="https://formspree.io/f/mbjevaqz"
           method="post"
           class="form"
         >
-        <fieldset>
-          <input
-          class="first-name"
-          type="text"
-          name="first-name"
-          id="first-name"
-          placeholder="First name"
-          maxlength="30"
-          required
-        />
-        <input
-          class="last-name"
-          type="text"
-          name="last-name"
-          id="last-name"
-          placeholder="Last name"
-          maxlength="30"
-          required
-        />
-      </fieldset>
+          <fieldset>
+            <input
+              class="first-name"
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First name"
+              maxlength="30"
+              required
+            />
+            <input
+              class="last-name"
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last name"
+              maxlength="30"
+              required
+            />
+          </fieldset>
           <input
             class="name"
             type="text"
@@ -349,8 +353,7 @@
             maxlength="500"
             placeholder="Write something in me..."
             required
-          ></textarea
-          >
+          ></textarea>
           <input
             class="btn form-button"
             type="submit"
