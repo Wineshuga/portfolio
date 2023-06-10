@@ -98,7 +98,7 @@ ul {
 }
 
 .header > a,
-.hero-text>h2 {
+.hero-text > h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -650,5 +650,4 @@ ul {
   .about-list {
     max-width: 72.25rem;
   }
-  
 }
