@@ -12,6 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -24,9 +25,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Portifolio] <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
-Portfolio is a project that aims to show my capability as a developer, helping others to get an idea of skills I offer. It contains completed projects and details of my skills and assets.
+This project aims to show my capability as a developer, helping others to get an idea of skills I offer. It contains completed projects and details of my skills and assets.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,6 +44,12 @@ Portfolio is a project that aims to show my capability as a developer, helping o
 ### Key Features <a name="key-features"></a>
 
 - Mobile first design
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://wineshuga.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
