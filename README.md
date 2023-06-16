@@ -29,6 +29,8 @@
 
 This project aims to show my capability as a developer, helping others to get an idea of skills I offer. It contains completed projects and details of my skills and assets.
 
+Watch [this video](https://www.loom.com/share/166b7fd703da48f38985d27ae486609f?sid=92da2118-6c19-49b3-abfd-42626b456d1d) to learn more about this project.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
