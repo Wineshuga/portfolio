@@ -63,15 +63,23 @@
     <header class="header">
       <a href="#">Winnie</a>
       <nav>
-        <img src="./assets/icons/menu.png" class="menu-img" alt="menu" />
+        <img src="./assets/icons/menu.png" class="icon open-icon" alt="menu icon" />
         <ul class="nav-list">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="#"><img src="./assets/icons/mail.svg" alt="mail box" /></a>
           </li>
-        </ul>
+        </ul> 
+        <div class="mobile-menu">
+          <img src="./assets/icons/cancel.svg" class="icon cancel-icon" alt="close menu icon">
+          <ul class="mobile-nav">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>  
+        </div> 
       </nav>
     </header>
 
@@ -123,7 +131,7 @@
       </section>
 
       <section class="multi-post">
-        <section class="mp-head">
+        <section id="portfolio" class="mp-head">
           <h3>My Recent Works</h3>
           <div>
             <hr />
@@ -252,7 +260,7 @@
         </section>
       </section>
 
-      <section class="about-section">
+      <section id="about" class="about-section">
         <article class="about-details">
           <h3>About me</h3>
           <p>
@@ -295,7 +303,7 @@
           </div>
         </article>
       </section>
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <div>
           <p>
             I'm always interested in hearing about new projects, so if you'd
@@ -392,5 +400,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
