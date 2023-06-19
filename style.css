@@ -388,8 +388,7 @@ ul {
     margin-bottom: 2rem;
   }
 
-  .first-name,
-  .last-name {
+  fieldset {
     display: none;
   }
 }
