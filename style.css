@@ -118,7 +118,20 @@ ul {
 
 .nav-list {
   align-items: center;
+}
+
+.mobile-menu {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #3C3A39;
+}
+
+.mobile-nav {
+  display: block;
 }
 
 .icon {
@@ -389,7 +402,7 @@ ul {
   }
 
   fieldset,
-  .cancel-icon {
+  .nav-list {
     display: none;
   }
 }
@@ -412,7 +425,8 @@ ul {
     padding: 1rem 6rem;
   }
 
-  .icon {
+  .icon,
+  .mobile-menu {
     display: none;
   }
 
