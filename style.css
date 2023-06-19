@@ -121,7 +121,7 @@ ul {
   display: none;
 }
 
-.menu-img {
+.icon {
   width: 1.1rem;
 }
 
@@ -388,7 +388,8 @@ ul {
     margin-bottom: 2rem;
   }
 
-  fieldset {
+  fieldset,
+  .cancel-icon {
     display: none;
   }
 }
@@ -411,7 +412,7 @@ ul {
     padding: 1rem 6rem;
   }
 
-  .menu-img {
+  .icon {
     display: none;
   }
 
