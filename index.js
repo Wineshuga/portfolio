@@ -163,10 +163,10 @@ worksBtn.forEach((element, elementIndex) => {
     </section>
     `;
     popUp.appendChild(modal);
-  });
-});
 
-const closeProject = document.querySelector('.close-project');
-closeProject.addEventListener('click', () => {
-  popUp.style.display = 'none';
+    const closeProject = document.querySelector('.close-project');
+    closeProject.addEventListener('click', () => {
+      popUp.style.display = 'none';
+    });
+  });
 });
