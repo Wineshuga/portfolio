@@ -168,70 +168,51 @@ ul {
 }
 
 .modal {
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 3rem auto;
   padding: 1.5rem 1rem;
   width: 21rem;
 }
 
-.modal>img {
+.modal > img {
   float: right;
 }
 
-.modal>h3 {
+.modal > h3 {
   color: #172b4d;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
 }
 
-.modal>ul>li {
+.modal > ul > li {
   border: 1px solid #8993a4;
   padding: 0.6rem;
   font-family: 'Inter', sans-serif;
   margin: 1.5rem 0.5rem 1.5rem 0;
 }
 
-.modal>section>article>div {
+.modal > section > article > div {
   display: flex;
   justify-content: space-between;
 }
 
-.modal>section>article>div>button:nth-child(1) {
-background-image: url(./assets/icons/live-icon.svg);
-}
-
-.modal>section>article>div>button:nth-child(2) {
-  background-image: url(./assets/icons/source-icon.svg);
-}
-
-.modal>section>article>div>button {
+.modal > section > article > div > button {
   background-repeat: no-repeat;
   background-position: 90% 50%;
   padding: 0.7rem 2.2rem 0.7rem 1.2rem;
   margin-top: 1rem;
 }
 
-.modal>section>article>div>button>a {
-  color: #ffffff;
+.modal > section > article > div > button:nth-child(1) {
+  background-image: url(./assets/icons/live-icon.svg);
 }
 
-.modal>section>article>p {
-  color: #344563;
-  font-weight: 400;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+.modal > section > article > div > button:nth-child(2) {
+  background-image: url(./assets/icons/source-icon.svg);
 }
 
-.modal>section>div>img{
-  width: 100%;
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  margin: 4.3rem auto;
-  width: 20.4rem;
+.modal > section > article > div > button > a {
+  color: #fff;
 }
 
 .contact-section > div > p {
@@ -241,6 +222,25 @@ background-image: url(./assets/icons/live-icon.svg);
   text-align: center;
   line-height: 1.5;
   color: #172b4d;
+}
+
+.modal > section > article > p {
+  color: #344563;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal > section > div > img {
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  margin: 4.3rem auto;
+  width: 20.4rem;
 }
 
 .form {
@@ -627,24 +627,29 @@ background-image: url(./assets/icons/live-icon.svg);
     margin-top: 1rem;
   }
 
-  .modal>section {
+  .modal > section {
     display: flex;
     gap: 1.5rem;
   }
 
-  .modal>section>div {
+  .contact-section > div,
+  .form {
     width: 50%;
   }
 
-  .modal>section>article {
+  .modal > section > div {
     width: 50%;
   }
 
-  .modal>section>article>div {
+  .modal > section > article {
+    width: 50%;
+  }
+
+  .modal > section > article > div {
     display: block;
   }
 
-  .modal>section>article>div>button {
+  .modal > section > article > div > button {
     margin: 2rem 0.2rem 0;
   }
 
@@ -659,11 +664,6 @@ background-image: url(./assets/icons/live-icon.svg);
     gap: 1.5rem;
     width: 43.75rem;
     text-align: left;
-  }
-
-  .contact-section > div,
-  .form {
-    width: 50%;
   }
 
   .contact-section > div > p {
@@ -735,19 +735,23 @@ background-image: url(./assets/icons/live-icon.svg);
     width: 60rem;
   }
 
-  .modal>section>div {
-    width: 60%;
-  }
-
-  .modal>section>article {
+  .contact-section > div {
     width: 40%;
   }
 
-  .modal>section>article>p {
+  .modal > section > div {
+    width: 60%;
+  }
+
+  .modal > section > article {
+    width: 40%;
+  }
+
+  .modal > section > article > p {
     line-height: 2.5;
   }
 
-  .modal>section>article>div>button {
+  .modal > section > article > div > button {
     margin: 3.3rem 0.6rem 0;
   }
 
@@ -770,10 +774,6 @@ background-image: url(./assets/icons/live-icon.svg);
 
   .contact-section {
     width: 56.3rem;
-  }
-
-  .contact-section > div {
-    width: 40%;
   }
 
   .form {
