@@ -136,11 +136,11 @@ code.innerHTML = allCodes.join('');
 projectSection.appendChild(code);
 
 const worksBtn = document.querySelectorAll('.works-btn, .mp-btn');
+const modal = document.createElement('div');
+modal.className = 'modal';
 worksBtn.forEach((element, elementIndex) => {
   element.addEventListener('click', () => {
     popUp.style.display = 'block';
-    const modal = document.createElement('div');
-    modal.className = 'modal';
     modal.innerHTML = `
     <img class="close-project" src="./assets/icons/cancel.svg" alt="">
     <h3>${projectDetails[elementIndex].name}</h3>
