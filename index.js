@@ -2,8 +2,7 @@ const openIcon = document.querySelector('.open-icon');
 const closeIcon = document.querySelector('.cancel-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileLinks = document.querySelector('.mobile-nav>li');
-const modal = document.querySelector('.modal');
-const closeProject = document.querySelector('.close-project');
+const popUp = document.querySelector('.popup-section');
 const projectSection = document.querySelector('.multi-post');
 
 const closeMenu = () => {
@@ -139,7 +138,9 @@ projectSection.appendChild(code);
 const worksBtn = document.querySelectorAll('.works-btn, .mp-btn');
 worksBtn.forEach((element, elementIndex) => {
   element.addEventListener('click', () => {
-    modal.style.display = 'block';
+    popUp.style.display = 'block';
+    const modal = document.createElement('div');
+    modal.className = 'modal';
     modal.innerHTML = `
     <img class="close-project" src="./assets/icons/cancel.svg" alt="">
     <h3>${projectDetails[elementIndex].name}</h3>
@@ -153,15 +154,19 @@ worksBtn.forEach((element, elementIndex) => {
         <img src=${projectDetails[elementIndex].img} alt="An image of the project">
       </div>
       <article>
-        ${projectDetails[elementIndex].details}
-        <button class="btn" type="button"><a href='${projectDetails[elementIndex].live}'>See Live</a></button>
-        <button class="btn" type="button"><a href='${projectDetails[elementIndex]['github link']}'>See Source</a></button>
+        <p>${projectDetails[elementIndex].details}</p>
+        <div>
+          <button class="btn" type="button"><a href='${projectDetails[elementIndex].live}'>See Live</a></button>
+          <button class="btn" type="button"><a href='${projectDetails[elementIndex]['github link']}'>See Source</a></button>
+        </div>
       </article>
     </section>
     `;
+    popUp.appendChild(modal);
   });
 });
 
+const closeProject = document.querySelector('.close-project');
 closeProject.addEventListener('click', () => {
-  modal.style.display = 'none';
+  popUp.style.display = 'none';
 });
