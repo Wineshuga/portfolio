@@ -21,7 +21,7 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/wrk-bg-img.svg',
+    'featured image': './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
     'link to live version': '#',
     'link to source': '#',
@@ -30,7 +30,7 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/wrk-bg-img.svg',
+    'featured image': './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
     'link to live version': '#',
     'link to source': '#',
@@ -39,7 +39,7 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/wrk-bg-img.svg',
+    'featured image': './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
     'link to live version': '#',
     'link to source': '#',
@@ -48,7 +48,7 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/wrk-bg-img.svg',
+    'featured image': './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
     'link to live version': '#',
     'link to source': '#',
@@ -57,7 +57,7 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/wrk-bg-img.svg',
+    'featured image': './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
     'link to live version': '#',
     'link to source': '#',
@@ -66,7 +66,7 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/wrk-bg-img.svg',
+    'featured image': './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
     'link to live version': '#',
     'link to source': '#',
