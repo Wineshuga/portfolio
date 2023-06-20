@@ -157,6 +157,10 @@ ul {
   width: 1.1rem;
 }
 
+.modal {
+  display: none;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;

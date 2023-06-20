@@ -2,6 +2,8 @@ const openIcon = document.querySelector('.open-icon');
 const closeIcon = document.querySelector('.cancel-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileLinks = document.querySelector('.mobile-nav>li');
+const modal = document.querySelector('.modal');
+const closeProject = document.querySelector('.close-project');
 const projectSection = document.querySelector('.multi-post');
 
 const closeMenu = () => {
@@ -21,55 +23,97 @@ const projectDetails = [
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/project-img.svg',
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.`,
+    img: './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
-    'link to live version': '#',
-    'link to source': '#',
+    live: 'https://github.com/wineshuga',
+    'github link': 'https://github.com/wineshuga',
   },
   {
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/project-img.svg',
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.`,
+    img: './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
-    'link to live version': '#',
-    'link to source': '#',
+    live: 'https://github.com/wineshuga',
+    'github link': 'https://github.com/wineshuga',
   },
   {
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/project-img.svg',
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.`,
+    img: './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
-    'link to live version': '#',
-    'link to source': '#',
+    live: 'https://github.com/wineshuga',
+    'github link': 'https://github.com/wineshuga',
   },
   {
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/project-img.svg',
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.`,
+    img: './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
-    'link to live version': '#',
-    'link to source': '#',
+    live: 'https://github.com/wineshuga',
+    'github link': 'https://github.com/wineshuga',
   },
   {
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/project-img.svg',
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.`,
+    img: './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
-    'link to live version': '#',
-    'link to source': '#',
+    live: 'https://github.com/wineshuga',
+    'github link': 'https://github.com/wineshuga',
   },
   {
     name: 'Professional Art Printing Data',
     description: `A daily selection of privately personalized reads; no accounts or
                   sign-ups required. Has been the industry's standard.`,
-    'featured image': './assets/images/project-img.svg',
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.`,
+    img: './assets/images/project-img.svg',
     technologies: ['HTML', 'Bootscrap', 'Ruby'],
-    'link to live version': '#',
-    'link to source': '#',
+    live: 'https://github.com/wineshuga',
+    'github link': 'https://github.com/wineshuga',
   },
 ];
 
@@ -91,3 +135,33 @@ const allCodes = projectDetails.map((item) => (
 ));
 code.innerHTML = allCodes.join('');
 projectSection.appendChild(code);
+
+const worksBtn = document.querySelectorAll('.works-btn, .mp-btn');
+worksBtn.forEach((element, elementIndex) => {
+  element.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modal.innerHTML = `
+    <img class="close-project" src="./assets/icons/cancel.svg" alt="">
+    <h3>${projectDetails[elementIndex].name}</h3>
+    <ul>
+      <li>HTML</li>
+      <li>Bootscrap</li>
+      <li>Ruby</li>
+    </ul>
+    <section>
+      <div>
+        <img src=${projectDetails[elementIndex].img} alt="An image of the project">
+      </div>
+      <article>
+        ${projectDetails[elementIndex].details}
+        <button class="btn" type="button"><a href='${projectDetails[elementIndex].live}'>See Live</a></button>
+        <button class="btn" type="button"><a href='${projectDetails[elementIndex]['github link']}'>See Source</a></button>
+      </article>
+    </section>
+    `;
+  });
+});
+
+closeProject.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
