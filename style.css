@@ -157,11 +157,62 @@ ul {
   width: 1.1rem;
 }
 
-.contact-section {
+.popup-section {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  overflow: auto;
+  background-color: #979493d2;
+}
+
+.modal {
+  background-color: #fff;
+  margin: 3rem auto;
+  padding: 1.5rem 1rem;
+  width: 21rem;
+}
+
+.modal > img {
+  float: right;
+}
+
+.modal > h3 {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+}
+
+.modal > ul > li {
+  border: 1px solid #8993a4;
+  padding: 0.6rem;
+  font-family: 'Inter', sans-serif;
+  margin: 1.5rem 0.5rem 1.5rem 0;
+}
+
+.modal > section > article > div {
   display: flex;
-  flex-direction: column;
-  margin: 4.3rem auto;
-  width: 20.4rem;
+  justify-content: space-between;
+}
+
+.modal > section > article > div > button {
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  padding: 0.7rem 2.2rem 0.7rem 1.2rem;
+  margin-top: 1rem;
+}
+
+.modal > section > article > div > button:nth-child(1) {
+  background-image: url(./assets/icons/live-icon.svg);
+}
+
+.modal > section > article > div > button:nth-child(2) {
+  background-image: url(./assets/icons/source-icon.svg);
+}
+
+.modal > section > article > div > button > a {
+  color: #fff;
 }
 
 .contact-section > div > p {
@@ -171,6 +222,25 @@ ul {
   text-align: center;
   line-height: 1.5;
   color: #172b4d;
+}
+
+.modal > section > article > p {
+  color: #344563;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal > section > div > img {
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  margin: 4.3rem auto;
+  width: 20.4rem;
 }
 
 .form {
@@ -552,6 +622,37 @@ ul {
     margin: 0;
   }
 
+  .modal {
+    width: 42rem;
+    margin-top: 1rem;
+  }
+
+  .modal > section {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .contact-section > div,
+  .form {
+    width: 50%;
+  }
+
+  .modal > section > div {
+    width: 50%;
+  }
+
+  .modal > section > article {
+    width: 50%;
+  }
+
+  .modal > section > article > div {
+    display: block;
+  }
+
+  .modal > section > article > div > button {
+    margin: 2rem 0.2rem 0;
+  }
+
   .about-list > div > ul > li {
     font-size: 22px;
   }
@@ -563,11 +664,6 @@ ul {
     gap: 1.5rem;
     width: 43.75rem;
     text-align: left;
-  }
-
-  .contact-section > div,
-  .form {
-    width: 50%;
   }
 
   .contact-section > div > p {
@@ -635,6 +731,30 @@ ul {
     line-height: 32px;
   }
 
+  .modal {
+    width: 60rem;
+  }
+
+  .contact-section > div {
+    width: 40%;
+  }
+
+  .modal > section > div {
+    width: 60%;
+  }
+
+  .modal > section > article {
+    width: 40%;
+  }
+
+  .modal > section > article > p {
+    line-height: 2.5;
+  }
+
+  .modal > section > article > div > button {
+    margin: 3.3rem 0.6rem 0;
+  }
+
   .mp-head > h3 {
     font-size: 35px;
   }
@@ -656,16 +776,16 @@ ul {
     width: 56.3rem;
   }
 
-  .contact-section > div {
-    width: 40%;
-  }
-
   .form {
     width: 60%;
   }
 }
 
 @media (min-width: 1200px) {
+  .modal {
+    width: 72.25rem;
+  }
+
   .mp-head > h3 {
     font-size: 40px;
   }
