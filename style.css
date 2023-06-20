@@ -620,6 +620,32 @@ background-image: url(./assets/icons/live-icon.svg);
     margin: 0;
   }
 
+  .modal {
+    width: 42rem;
+    margin-top: 1rem;
+  }
+
+  .modal>section {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .modal>section>div {
+    width: 50%;
+  }
+
+  .modal>section>article {
+    width: 50%;
+  }
+
+  .modal>section>article>div {
+    display: block;
+  }
+
+  .modal>section>article>div>button {
+    margin: 2rem 0.2rem 0;
+  }
+
   .about-list > div > ul > li {
     font-size: 22px;
   }
@@ -703,6 +729,26 @@ background-image: url(./assets/icons/live-icon.svg);
     line-height: 32px;
   }
 
+  .modal {
+    width: 60rem;
+  }
+
+  .modal>section>div {
+    width: 60%;
+  }
+
+  .modal>section>article {
+    width: 40%;
+  }
+
+  .modal>section>article>p {
+    line-height: 2.5;
+  }
+
+  .modal>section>article>div>button {
+    margin: 3.3rem 0.6rem 0;
+  }
+
   .mp-head > h3 {
     font-size: 35px;
   }
@@ -734,6 +780,10 @@ background-image: url(./assets/icons/live-icon.svg);
 }
 
 @media (min-width: 1200px) {
+  .modal {
+    width: 72.25rem;
+  }
+
   .mp-head > h3 {
     font-size: 40px;
   }
