@@ -167,10 +167,13 @@ ul {
 
 .modal {
   background-color: #ffffff;
-  z-index: 1;
   margin: 3rem auto;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   width: 21rem;
+}
+
+.modal>img {
+  float: right;
 }
 
 .modal>h3 {
