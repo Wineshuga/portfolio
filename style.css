@@ -277,6 +277,12 @@ ul {
   font-style: italic;
 }
 
+.error {
+  color: red;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 0.5rem;
+}
+
 .footer-hr {
   margin: 0;
 }
