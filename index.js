@@ -193,3 +193,33 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+const firstName = document.querySelector('#first-name');
+const lastName = document.querySelector('#last-name');
+const fullName = document.querySelector('#full-name');
+const comment = document.querySelector('#comment');
+
+const userDetails = {
+  firstname: `${firstName.value}`,
+  lastname: `${lastName.value}`,
+  fullname: `${fullName.value}`,
+  email: `${email.value}`,
+  message: `${comment.value}`,
+};
+
+function updateStorage() {
+  if (firstName.onchange || lastName.onchange) {
+    const currentStorage = JSON.parse(localStorage.getItem('userDetails'));
+    firstName.value = currentStorage.firstname;
+    lastName.value = currentStorage.lastname;
+    fullName.value = currentStorage.fullname;
+    email.value = currentStorage.email;
+    comment.value = currentStorage.message;
+  }
+}
+
+if (!localStorage.getItem('userDetails')) {
+  localStorage.setItem('userDetails', JSON.stringify(userDetails));
+} else {
+  updateStorage();
+}
