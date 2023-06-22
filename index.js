@@ -187,10 +187,9 @@ email.addEventListener('input', () => {
   }
 });
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', () => {
   if (email.value !== email.value.toLowerCase()) {
     showError();
-    event.preventDefault();
   }
 });
 
